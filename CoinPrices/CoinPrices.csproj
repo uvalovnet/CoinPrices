@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BinanceExchange\BinanceExchange.csproj" />
+    <ProjectReference Include="..\BitgetExchange\BitgetExchange.csproj" />
+    <ProjectReference Include="..\BybitExchange\BybitExchange.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\ExchangeManager\ExchangeManager.csproj" />
+    <ProjectReference Include="..\KucoinExchange\KucoinExchange.csproj" />
+  </ItemGroup>
+
+</Project>
